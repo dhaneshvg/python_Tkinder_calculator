@@ -29,3 +29,11 @@ def bt_equal():
 
 expression = ""
 input_text = StringVar()
+
+input_frame = Frame(window, width=20, height=3, bd=2, highlightbackground="grey", highlightcolor="black",
+                    highlightthickness=2)
+input_frame.grid(column=0, row=0, columnspan=32, padx=5, pady=6)
+
+input_field = Entry(input_frame, font=('arial', 19, 'bold'), textvariable=input_text, width=23, bg="#eee",
+                    justify=RIGHT)
+input_field.grid(row=0, column=0, ipady=15, ipadx=6)
